@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1-24 Atividade - HTML - Criando formulário de cadastro</title>
+    <meta description="Criando formulário de cadastro">
+    <link rel="icon" href="https://alunos.kenzie.com.br/accounts/1/files/11/download?verifier=ESsDDItziPzfW2yyg8UxOUZtHqSQBJdFuHWKh9e4">
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required/><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." required/><br>
+        <label for="descricao">Descrição</label><br>
+        <textarea name="descricao" id="descricao" placeholder="Fale mais sobre você aqui..." cols="21" rows="10" maxlength="200" required></textarea><br>
+        <label for="modulo">Módulo</label><br>
+        <select name="modulo" id="modulo" required>
+            <option value="">Escolher módulo</option>
+            <option value="1">Módulo 1</option>
+            <option value="2">Módulo 2</option>
+            <option value="3">Módulo 3</option>
+            <option value="4">Módulo 4</option>
+            <option value="5">Módulo 5</option>
+            <option value="6">Módulo 6</option>
+        </select><br>
+        <label for="senha">Senha</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui..." maxlength="14" required/><br>
+        <label for="senha">Confirmar Senha</label><br>
+        <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Digite sua senha novamente aqui..." required/>
+        <p>Deseja receber novidades em seu e-mail?</p>
+        <label for="sim">Sim</label>
+        <input type="radio" value="sim" id="sim" name="news" required />
+        <label for="nao">Não</label>
+        <input type="radio" value="nao" id="nao" name="news" required /><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
